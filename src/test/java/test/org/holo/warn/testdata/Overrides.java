@@ -10,16 +10,16 @@ public class Overrides {
             "import javax.tools.Diagnostic;\n" +
             "\n" +
             "public abstract class Override {\n" +
-            "    @Warning(severity = Diagnostic.Kind.NOTE, message = \"Override\")\n" +
+            "    @Warning(severity = Warning.Kind.NOTE, message = \"Override\")\n" +
             "    public void foo(){}\n" +
             "\n" +
-            "    @Warning(severity = Diagnostic.Kind.NOTE, message = \"Override\")\n" +
+            "    @Warning(severity = Warning.Kind.NOTE, message = \"Override\")\n" +
             "    public void bar(){}\n" +
             "\n" +
-            "    @Warning(severity = Diagnostic.Kind.NOTE, message = \"Override\")\n" +
+            "    @Warning(severity = Warning.Kind.NOTE, message = \"Override\")\n" +
             "    public void corge(){}\n" +
             "\n" +
-            "    @Warning(severity = Diagnostic.Kind.NOTE, message = \"Override\")\n" +
+            "    @Warning(severity = Warning.Kind.NOTE, message = \"Override\")\n" +
             "    abstract void qux();\n" +
             "\n" +
             "    public static class Overriding extends Override {\n" +
@@ -28,13 +28,13 @@ public class Overrides {
             "            super.foo();\n" +
             "        }\n" +
             "\n" +
-            "        @Warning(severity = Diagnostic.Kind.ERROR, message = \"Overriding\")\n" +
+            "        @Warning(severity = Warning.Kind.ERROR, message = \"Overriding\")\n" +
             "        @java.lang.Override\n" +
             "        public void bar() {\n" +
             "            super.bar();\n" +
             "        }\n" +
             "\n" +
-            "        @Warning(severity = Diagnostic.Kind.ERROR, message = \"Overriding\")\n" +
+            "        @Warning(severity = Warning.Kind.ERROR, message = \"Overriding\")\n" +
             "        @java.lang.Override\n" +
             "        void qux() {}\n" +
             "    }\n" +

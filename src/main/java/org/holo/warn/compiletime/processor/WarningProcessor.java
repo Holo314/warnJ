@@ -93,7 +93,7 @@ public class WarningProcessor
             return;
         }
 
-        trees.printMessage(warning.severity(), warning.message(), identity, root);
+        trees.printMessage(warning.severity().unwrap, warning.message(), identity, root);
     }
 
 

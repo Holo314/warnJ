@@ -8,13 +8,13 @@ public class WarnLevel {
     @Warning // default values
     public static void foo() {}
 
-    @Warning(severity = Diagnostic.Kind.WARNING, message = "Explicit severity and custom message")
+    @Warning(severity = Warning.Kind.WARNING, message = "Explicit severity and custom message")
     public static void bar() {}
 
-    @Warning(severity = Diagnostic.Kind.NOTE, message = "A note")
+    @Warning(severity = Warning.Kind.NOTE, message = "A note")
     public static void qux() {}
 
-    @Warning(severity = Diagnostic.Kind.MANDATORY_WARNING, message = "o7")
+    @Warning(severity = Warning.Kind.MANDATORY_WARNING, message = "o7")
     public static void corge() {}
 
     public static void waldo() {
@@ -25,6 +25,6 @@ public class WarnLevel {
         new WarnLevel(3); // an other, with message "\\o/"
     }
 
-    @Warning(severity = Diagnostic.Kind.OTHER, message = "\\o/")
+    @Warning(severity = Warning.Kind.NOTE, message = "\\o/")
     public WarnLevel(int x) {}
 }

@@ -50,10 +50,6 @@ deprecated methods.
 
 Informative message from the tool.
 
-### `Diagnostic.Kind.OTHER`
-
-Diagnostic which does not fit within the other kinds.
-
 ---
 
 ### Suppressing `@Warning`

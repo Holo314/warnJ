@@ -43,7 +43,7 @@ public class WarningTest {
                 assertEquals("A note", diagnostic.getMessage(Locale.ENGLISH), getFailureMessage(diagnostic));
             } else if (diagnostic.getKind() == MANDATORY_WARNING && diagnostic.getLineNumber() == 24) {
                 assertEquals("o7", diagnostic.getMessage(Locale.ENGLISH), getFailureMessage(diagnostic));
-            } else if (diagnostic.getKind() == OTHER && diagnostic.getLineNumber() == 25) {
+            } else if (diagnostic.getKind() == NOTE && diagnostic.getLineNumber() == 25) {
                 assertEquals("\\o/", diagnostic.getMessage(Locale.ENGLISH), getFailureMessage(diagnostic));
             } else {
                 fail(getFailureMessage(diagnostic));
